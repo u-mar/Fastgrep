@@ -6,8 +6,8 @@ pub fn search(arg:&Vec<String>) {
     if arg.len() < 3 {
         panic!("Not enough Arguments");
     }
-    let word:String = arg[1].clone();
-    let file:String = arg[3].clone();
+    let word:String = arg[2].clone();
+    let file:String = arg[4].clone();
     println!("Searching {:} in {:}",word,file);
     let texts:String = fs::read_to_string(&file).unwrap();
     let mut found = false;
