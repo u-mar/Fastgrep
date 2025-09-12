@@ -1,7 +1,7 @@
 #[derive(Debug)]
 #[allow(dead_code)]
 pub struct Arguments {
-    i:bool,
+    pub i:bool,
     c:bool,
     l:bool,
     m:bool,
