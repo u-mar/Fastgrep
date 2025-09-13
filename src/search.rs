@@ -3,9 +3,9 @@ use colored::Colorize;
 
 use crate::args::Arguments;
 
-// main search function
+
 pub fn search(arg: &Vec<String>, a: Arguments) {
-    if arg.len() < 5 {
+    if arg.len() < 3 {
         panic!("Not enough Arguments");
     }
 
