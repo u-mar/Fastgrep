@@ -9,8 +9,8 @@ pub fn search(arg: &Vec<String>, a: Arguments) {
         panic!("Not enough Arguments");
     }
 
-    let word = arg[2].clone();
-    let file = arg[4].clone();
+    let word = a.word.clone();
+    let file = a.file.clone();
     println!("Searching {} in {}", word, file);
 
     let texts = fs::read_to_string(&file).unwrap();
