@@ -2,9 +2,9 @@
 #[allow(dead_code)]
 pub struct Arguments {
     pub i:bool,
-    c:bool,
-    l:bool,
-    m:bool,
+    pub c:bool,
+    pub l:bool,
+    pub m:bool,
 }
 impl Arguments {
     pub fn build(arg:&Vec<String>) -> Arguments{
